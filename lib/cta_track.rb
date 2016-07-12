@@ -1,5 +1,10 @@
 require "cta_track/version"
 
 module CtaTrack
-  # Your code goes here...
+  class API 
+    def initialize(apikey)
+      @apikey = apikey 
+      @baseurl = ""
+    end
+  end
 end
