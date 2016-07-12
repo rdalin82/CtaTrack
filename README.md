@@ -13,6 +13,8 @@ gem 'cta_track'
 And then execute:
 
     $ bundle
+    $ touch config.yml
+    $ echo API_KEY: YOUR_API_KEY_HERE >> config.yml
 
 Or install it yourself as:
 
@@ -20,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Basic usage: 
+
+`cta = CtaTrack::Api.new` 
+`cta.vehicles(:routes=>[78, 82]) # returns xml document of buses on 82 and 78 routes`
 
 ## Development
 
