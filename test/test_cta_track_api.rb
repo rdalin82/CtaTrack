@@ -10,4 +10,11 @@ class CtaTrackAPI < Minitest::Test
   def test_key_will_not_be_default
     refute_equal "YOUR API KEY HERE", CtaTrack::API.new.apikey
   end
+  def test_will_respond_to_vehicles
+    cta = CtaTrack::API.new
+    assert cta.vehicles(:routes=>[78, 82])
+    assert cta.vehicles(:routes=>82)
+    assert cta.vehicles(:routes=>92)
+    assert cta.vehicles(:routes=>[22])
+  end
 end
