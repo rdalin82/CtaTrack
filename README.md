@@ -25,6 +25,7 @@ Or install it yourself as:
 Basic usage: 
 
 `cta = CtaTrack::Api.new` 
+
 `cta.vehicles(:routes=>[78, 82]) # returns xml document of buses on 82 and 78 routes`
 
 ## Development
