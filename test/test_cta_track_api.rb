@@ -1,20 +1,31 @@
 require_relative './minitest_helper'
+require 'json'
 
 class CtaTrackAPI < Minitest::Test
-  def test_it_will_initialize
-    assert CtaTrack::API.new
+  def setup
+    config = YAML.load(File.open(File.expand_path("../../config.yml", __FILE__), "r"))
+    @key = config['API_KEY'] 
   end
+
   def test_it_will_have_an_api_key
-    assert CtaTrack::API.new.apikey 
+    CtaTrack::API.apikey = "yo"
+    assert CtaTrack::API
   end
   def test_key_will_not_be_default
     refute_equal "YOUR API KEY HERE", CtaTrack::API.new.apikey
   end
-  def test_will_respond_to_vehicles
-    cta = CtaTrack::API.new
-    assert cta.vehicles(:routes=>[78, 82])
-    assert cta.vehicles(:routes=>82)
-    assert cta.vehicles(:routes=>92)
-    assert cta.vehicles(:routes=>[22])
+  def test_it_will_respond_to_vehicles
+    CtaTrack::API.apikey = @key
+    assert CtaTrack::API.vehicles(:routes=>[78, 82])
+    assert CtaTrack::API.vehicles(:routes=>82)
+    assert CtaTrack::API.vehicles(:routes=>92)
+    assert CtaTrack::API.vehicles(:routes=>[22])
   end
+  def test_it_will_respond_to_routes
+    CtaTrack::API.apikey = @key
+    assert CtaTrack::API.routes()
+    assert CtaTrack::API.routes(:routes=>78)
+    assert CtaTrack::API.routes(:routes=>[78, 82])
+    puts CtaTrack::API.routes().class
+  end    
 end

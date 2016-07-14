@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{This is a gem that interacts with CTA's public bus API }
   spec.description   = %q{This gem is designed to pull data from the CTA public api and present it in a useable format that is easy to display in a webpage or other application}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/rdalin82/CtaTrack"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
