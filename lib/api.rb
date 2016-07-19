@@ -18,20 +18,23 @@ module CtaTrack
       return @@apikey
     end
     def self.vehicles_by_route(routes)
-      Nokogiri::XML(open("#{@@baseurl}getvehicles/?key=#{@@apikey}&rt=#{requested_routes(routes)}"))
+      nokorequest("#{@@baseurl}getvehicles/?key=#{@@apikey}&rt=#{requested_routes(routes)}")
     end
     def self.routes(args={})
-      Nokogiri::XML(open("#{@@baseurl}getroutes/?key=#{@@apikey}")) unless args[:routes]
-      Nokogiri::XML(open("#{@@baseurl}getroutes/?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}"))
+      nokorequest("#{@@baseurl}getroutes/?key=#{@@apikey}") unless args[:routes]
+      nokorequest("#{@@baseurl}getroutes/?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}")
     end
     def self.predictions(args={})
-      if args
-        Nokogiri::XML(open("#{@@baseurl}getpredictions?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}&stpid=#{args[:stopId]}")) 
+      if args[:routes] && args[:stopId]
+        nokorequest("#{@@baseurl}getpredictions?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}&stpid=#{args[:stopId]}")
       else 
         raise new ArgumentError
       end
     end
-     
+    def self.nokorequest(request)
+      Nokogiri::XML(open(request))
+    end
+
     def self.requested_routes(routes)
       if routes.respond_to?(:map)
         routes.map {|x| x.to_s + ","}.reduce(:+)[0...-1]
