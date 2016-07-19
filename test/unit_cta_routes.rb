@@ -13,7 +13,7 @@ class CtaTrackAPI < Minitest::Test
     assert CtaTrack::API.routes(:routes=>[78, 82])
   end
 
-  def it_will_will_return_type_of_xml
+  def test_it_will_will_return_type_of_xml
     CtaTrack::API.apikey = @key
     result = Nokogiri::XML::Document
     assert_equal result, CtaTrack::API.routes(:routes=>78).class

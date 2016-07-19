@@ -1,5 +1,3 @@
-# [![Build Status](https://travis-ci.org/rdalin82/CtaTrack.svg?branch=master)](https://travis-ci.org/rdalin82/CtaTrack)
-
 # CtaTrack
 
 Description coming

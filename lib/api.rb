@@ -25,8 +25,11 @@ module CtaTrack
       Nokogiri::XML(open("#{@@baseurl}getroutes/?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}"))
     end
     def self.predictions(args={})
-      Nokogiri::XML(open("#{@@baseurl}getpredictions?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}&stpid=#{args[:stopId]}")) if args[:stopId]
-      Nokogiri::XML(open("#{@@baseurl}getpredictions?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}&vid=#{args[:vehicleId]}")) if args[:vehicleId]
+      if args
+        Nokogiri::XML(open("#{@@baseurl}getpredictions?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}&stpid=#{args[:stopId]}")) 
+      else 
+        raise new ArgumentError
+      end
     end
      
     def self.requested_routes(routes)
