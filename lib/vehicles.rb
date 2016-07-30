@@ -21,7 +21,7 @@ module CtaTrack
           :heading => node.xpath('hdg').text.to_i,
           :pattern_id => node.xpath('pid').text.to_i,
           :pattern_distance => node.xpath('pdist').text.to_i, 
-          :rt => node.xpath('rt').text, 
+          :rt => node.xpath('rt').text.to_i, 
           :delay => node.xpath('dly').text, 
           :timestamp => DateTime.new(year, month, day, hour, minute)
         }
@@ -31,6 +31,9 @@ module CtaTrack
       end
       def method_missing(method_name, vid, *arguments, &block)
         @result[vid][method_name.to_sym]
+      end
+      def respond_to?(method_name, include_private = false)
+        @result[@result.keys[0]].include?("#{method_name}".to_sym)
       end
     end
   end
