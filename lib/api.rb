@@ -12,17 +12,11 @@ module CtaTrack
       @@apikey = apikey
     end
     def self.vehicles(args)
+      raise ArgumentError, "must include a :routes" unless args[:routes]
       vehicles_by_route(args[:routes]) if args[:routes]
     end
-    def self.apikey
-      return @@apikey
-    end
-    def self.vehicles_by_route(routes)
-      nokorequest("#{@@baseurl}getvehicles/?key=#{@@apikey}&rt=#{requested_routes(routes)}")
-    end
-    def self.routes(args={})
-      nokorequest("#{@@baseurl}getroutes/?key=#{@@apikey}") unless args[:routes]
-      nokorequest("#{@@baseurl}getroutes/?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}")
+    def self.routes()
+      nokorequest("#{@@baseurl}getroutes/?key=#{@@apikey}")
     end
     def self.predictions(args={})
       if args[:routes] && args[:stopId]
@@ -30,6 +24,12 @@ module CtaTrack
       else 
         raise new ArgumentError
       end
+    end
+    def self.apikey
+      return @@apikey
+    end
+    def self.vehicles_by_route(routes)
+      nokorequest("#{@@baseurl}getvehicles/?key=#{@@apikey}&rt=#{requested_routes(routes)}")
     end
     def self.nokorequest(request)
       Nokogiri::XML(open(request))
@@ -39,7 +39,7 @@ module CtaTrack
       if routes.respond_to?(:map)
         routes.map {|x| x.to_s + ","}.reduce(:+)[0...-1]
       else 
-        routes
+        routes.to_s
       end
     end
   end
