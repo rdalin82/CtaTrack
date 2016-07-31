@@ -5,7 +5,7 @@ module CtaTrack
       raise ArgumentError, "must enter api key" if API.apikey.nil?
       @result = {} 
       API.routes.root.xpath("route").each do |node|
-        @result[node.xpath('rt').to_sym] = {:number=> node.xpath('rt'), :name=> node.xpath('rtnm') }
+        @result[node.xpath('rt').text.to_i] = {:number=> node.xpath('rt').text, :name=> node.xpath('rtnm').text }
       end
     end
   end
