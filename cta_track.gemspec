@@ -9,9 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["rdalin82"]
   spec.email         = ["Robert.Dalin@gmail.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
+ 
 
   spec.summary       = %q{This is a gem that interacts with CTA's public bus API }
   spec.description   = %q{This gem is designed to pull data from the CTA public api and present it in a useable format that is easy to display in a webpage or other application}
