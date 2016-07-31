@@ -13,7 +13,7 @@ module CtaTrack
         day = time[(6..7)].to_i
         hour = time[(9..10)].to_i
         minute = time[(12..13)].to_i
-        @result[node.xpath('vid').text.to_i] = {
+        @result[node.xpath('vid').text] = {
           :vid => node.xpath('vid').text.to_i,
           :lat => node.xpath('lat').text.to_f,
           :lon => node.xpath('lon').text.to_f,
