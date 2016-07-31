@@ -2,6 +2,10 @@
 
 Description coming
 
+## Ruby Gems 
+
+[Project on rubygems.org](https://rubygems.org/gems/cta_track)
+
 ## Installation
 
 Add this line to your application's Gemfile:
