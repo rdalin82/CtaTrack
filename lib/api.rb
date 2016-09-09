@@ -18,7 +18,7 @@ module CtaTrack
     def self.routes()
       nokorequest("#{@@baseurl}getroutes/?key=#{@@apikey}")
     end
-    def self.predictions(args={})
+    def self.predictions(**args)
       if args[:routes] && args[:stopId]
         nokorequest("#{@@baseurl}getpredictions?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}&stpid=#{args[:stopId]}")
       else 
