@@ -5,3 +5,4 @@ gemspec
 gem 'nokogiri', '>=1.6.8'
 gem 'minitest'
 gem 'json'
+gem 'time_difference', '~> 0.5.0'
