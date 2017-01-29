@@ -1,8 +1,8 @@
 module CtaTrack
   class Predictions
-    attr_reader :result 
-    def initialize(args) 
-      @result = {} 
+    attr_reader :result
+    def initialize(args)
+      @result = {}
       API.predictions(args).root.xpath("prd").each do |node|
         time = node.xpath('tmstmp').text
         year = time[(0..3)].to_i
@@ -16,14 +16,15 @@ module CtaTrack
           :stpid => node.xpath('stpid').text.to_i,
           :vid => node.xpath("vid").text.to_i,
           :dstp => node.xpath("dstp").text.to_i,
-          :rt => node.xpath("rt").text, 
+          :rt => node.xpath("rt").text,
           :rtdir => node.xpath("rtdir").text,
           :des => node.xpath("des").text,
-          :prdtm => node.xpath("prdtm").text, 
+          :prdtm => node.xpath("prdtm").text,
           :dly => node.xpath("dly").text,
+          :message => node.xpath("msg").txt,
           :timestamp => DateTime.new(year, month, day, hour, minute)
-        } 
-      end 
+        }
+      end
     end
 
     def keys
