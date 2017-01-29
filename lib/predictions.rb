@@ -1,9 +1,13 @@
 module CtaTrack
   class Predictions
-    attr_reader :result
+    attr_reader :result, :request
     def initialize(args)
       @result = {}
-      API.predictions(args).root.xpath("prd").each do |node|
+      request = API.predictions(args)
+      puts request
+      @request = request
+      @result[:message] = request.root.xpath("error").xpath("msg").text
+      request.root.xpath("prd").each do |node|
         time = node.xpath('tmstmp').text
         year = time[(0..3)].to_i
         month = time[(4..5)].to_i
@@ -21,10 +25,12 @@ module CtaTrack
           :des => node.xpath("des").text,
           :prdtm => node.xpath("prdtm").text,
           :dly => node.xpath("dly").text,
-          :message => node.xpath("msg").txt,
           :timestamp => DateTime.new(year, month, day, hour, minute)
         }
       end
+    end
+    def message
+      @result[:message]
     end
 
     def keys
