@@ -8,7 +8,7 @@ module CtaTrack
   class API
     attr_accessor :apikey
     @@apikey = nil
-    @@baseurl = 'http://www.ctabustracker.com/bustime/api/v1/'
+    @@baseurl = 'http://www.ctabustracker.com/bustime/api/v2/'
 
     def self.apikey
       return @@apikey
@@ -19,11 +19,11 @@ module CtaTrack
     end
 
     def self.api_request(request)
-      JSON.parse(open(request+"&format=json").string)
+      JSON.parse(open(request+"&format=json").read)
     end
 
     def self.routes()
-      nokorequest("#{@@baseurl}getroutes/?key=#{@@apikey}")
+      api_request("#{@@baseurl}getroutes/?key=#{@@apikey}")
     end
 
     def self.requested_routes(routes)
@@ -34,20 +34,17 @@ module CtaTrack
       end
     end
 
-
     def self.vehicles(args)
       raise ArgumentError, "must include a :routes" unless args[:routes]
       vehicles_by_route(args[:routes]) if args[:routes]
     end
 
     def self.vehicles_by_route(routes)
-      nokorequest("#{@@baseurl}getvehicles/?key=#{@@apikey}&rt=#{requested_routes(routes)}")
+      api_request("#{@@baseurl}getvehicles/?key=#{@@apikey}&rt=#{requested_routes(routes)}")
     end
 
-
-
     def self.directions(route)
-      nokorequest("#{@@baseurl}getdirections?key=#{@@apikey}&rt=#{route}")
+      api_request("#{@@baseurl}getdirections?key=#{@@apikey}&rt=#{route}")
     end
     def self.stops(args)
       nokorequest("#{@@baseurl}getstops?key=#{@@apikey}&rt=#{args[:route]}&dir=#{args[:direction]}")

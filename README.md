@@ -1,8 +1,11 @@
 # CtaTrack
+[![Build Status](https://travis-ci.org/rdalin82/CtaTrack.svg?branch=master)](https://travis-ci.org/rdalin82/CtaTrack)
+
+[![codecov](https://codecov.io/gh/rdalin82/CtaTrack/branch/master/graph/badge.svg)](https://codecov.io/gh/rdalin82/CtaTrack)
 
 Description coming
 
-## Ruby Gems 
+## Ruby Gems
 
 [Project on rubygems.org](https://rubygems.org/gems/cta_track)
 
@@ -17,7 +20,7 @@ gem 'cta_track'
 And then execute:
 
     $ bundle
-    # needed to run tests 
+    # needed to run tests
     $ touch config.yml
     $ echo API_KEY: YOUR_API_KEY_HERE >> config.yml
 
@@ -27,9 +30,9 @@ Or install it yourself as:
 
 ## Usage
 
-Basic usage: 
+Basic usage:
 
-`CtaTrack::API.apikey = [YOUR API KEY]` 
+`CtaTrack::API.apikey = [YOUR API KEY]`
 
 `CtaTrack::API.vehicles(:routes=>[78, 82]) # returns Nokogiri::xml document of buses on 82 and 78 routes`
 
