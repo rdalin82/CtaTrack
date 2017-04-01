@@ -4,5 +4,8 @@ class TestCtaTrack < Minitest::Test
     config = YAML.load(File.open("config.yml"))
     @key = config['API KEY']
     CtaTrack::API.apikey = @key
+    response = CtaTrack::API.stops({:route=>78, :direction=>"Eastbound"})
+    stops = response["bustime-response"]["stops"]
+    assert_equal "11345", stops[0]["stpid"]
   end
 end

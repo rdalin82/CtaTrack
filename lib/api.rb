@@ -47,7 +47,7 @@ module CtaTrack
       api_request("#{@@baseurl}getdirections?key=#{@@apikey}&rt=#{route}")
     end
     def self.stops(args)
-      nokorequest("#{@@baseurl}getstops?key=#{@@apikey}&rt=#{args[:route]}&dir=#{args[:direction]}")
+      api_request("#{@@baseurl}getstops?key=#{@@apikey}&rt=#{args[:route]}&dir=#{args[:direction]}")
     end
   end
 
