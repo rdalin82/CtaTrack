@@ -1,0 +1,42 @@
+{
+	"bustime-response": {
+		"prd": [
+			{
+				"tmstmp": "20170401 17:21",
+				"typ": "A",
+				"stpnm": "2656 W Montrose",
+				"stpid": "11345",
+				"vid": "6867",
+				"dstp": 4800,
+				"rt": "78",
+				"rtdd": "78",
+				"rtdir": "Eastbound",
+				"des": "Wilson/Marine",
+				"prdtm": "20170401 17:26",
+				"tablockid": "78 -407",
+				"tatripid": "10002082",
+				"dly": false,
+				"prdctdn": "4",
+				"zone": ""
+			},
+			{
+				"tmstmp": "20170401 17:20",
+				"typ": "A",
+				"stpnm": "2656 W Montrose",
+				"stpid": "11345",
+				"vid": "8306",
+				"dstp": 17515,
+				"rt": "78",
+				"rtdd": "78",
+				"rtdir": "Eastbound",
+				"des": "Wilson/Marine",
+				"prdtm": "20170401 17:40",
+				"tablockid": "78 -406",
+				"tatripid": "10002081",
+				"dly": false,
+				"prdctdn": "19",
+				"zone": ""
+			}
+		]
+	}
+}

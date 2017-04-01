@@ -1,0 +1,426 @@
+{
+	"bustime-response": {
+		"stops": [
+			{
+				"stpid": "11345",
+				"stpnm": "2656 W Montrose",
+				"lat": 41.961261224228,
+				"lon": -87.695660591125
+			},
+			{
+				"stpid": "11300",
+				"stpnm": "7000 W Forest Preserve Avenue",
+				"lat": 41.955672438471,
+				"lon": -87.803340554237
+			},
+			{
+				"stpid": "17943",
+				"stpnm": "7100 W Forest Preserve Avenue",
+				"lat": 41.954793333333,
+				"lon": -87.805120000001
+			},
+			{
+				"stpid": "15518",
+				"stpnm": "Clark \u0026 Montrose",
+				"lat": 41.96180771016,
+				"lon": -87.665936350822
+			},
+			{
+				"stpid": "1935",
+				"stpnm": "Clark \u0026 Sunnyside",
+				"lat": 41.963351407875,
+				"lon": -87.666274309158
+			},
+			{
+				"stpid": "1936",
+				"stpnm": "Clark \u0026 Wilson",
+				"lat": 41.965226132587,
+				"lon": -87.666665911674
+			},
+			{
+				"stpid": "11298",
+				"stpnm": "Forest Preserve Avenue \u0026 Harlem/Irving Park",
+				"lat": 41.953378540856,
+				"lon": -87.80852258205402
+			},
+			{
+				"stpid": "11306",
+				"stpnm": "Forest Preserve Avenue \u0026 Montrose",
+				"lat": 41.959932884866,
+				"lon": -87.794285416603
+			},
+			{
+				"stpid": "11301",
+				"stpnm": "Forest Preserve Avenue \u0026 New England",
+				"lat": 41.957132511169,
+				"lon": -87.800266742706
+			},
+			{
+				"stpid": "18067",
+				"stpnm": "Forest Preserve Avenue \u0026 Oak Park",
+				"lat": 41.958484269681,
+				"lon": -87.797461780925
+			},
+			{
+				"stpid": "11305",
+				"stpnm": "Forest Preserve Avenue \u0026 Rutherford",
+				"lat": 41.958949177968,
+				"lon": -87.796506285667
+			},
+			{
+				"stpid": "11299",
+				"stpnm": "Harlem \u0026 Forest Preserve Avenue",
+				"lat": 41.953661791812,
+				"lon": -87.807213664055
+			},
+			{
+				"stpid": "11341",
+				"stpnm": "Montrose \u0026 Albany",
+				"lat": 41.961177455897,
+				"lon": -87.705852985382
+			},
+			{
+				"stpid": "17944",
+				"stpnm": "Montrose \u0026 Ashland",
+				"lat": 41.961540465974,
+				"lon": -87.669311875663
+			},
+			{
+				"stpid": "11312",
+				"stpnm": "Montrose \u0026 Austin",
+				"lat": 41.96032779946,
+				"lon": -87.777162194252
+			},
+			{
+				"stpid": "14813",
+				"stpnm": "Montrose \u0026 California",
+				"lat": 41.961245268364,
+				"lon": -87.697945833206
+			},
+			{
+				"stpid": "11347",
+				"stpnm": "Montrose \u0026 Campbell ",
+				"lat": 41.961285158016,
+				"lon": -87.691937685013
+			},
+			{
+				"stpid": "11316",
+				"stpnm": "Montrose \u0026 Central",
+				"lat": 41.960460000001,
+				"lon": -87.766925
+			},
+			{
+				"stpid": "11336",
+				"stpnm": "Montrose \u0026 Central Park",
+				"lat": 41.961037841767,
+				"lon": -87.718175053596
+			},
+			{
+				"stpid": "11324",
+				"stpnm": "Montrose \u0026 Cicero",
+				"lat": 41.960690799606,
+				"lon": -87.747647166252
+			},
+			{
+				"stpid": "11352",
+				"stpnm": "Montrose \u0026 Damen",
+				"lat": 41.961436738469,
+				"lon": -87.679073810577
+			},
+			{
+				"stpid": "11331",
+				"stpnm": "Montrose \u0026 Elston",
+				"lat": 41.960906205308,
+				"lon": -87.72995531559
+			},
+			{
+				"stpid": "11343",
+				"stpnm": "Montrose \u0026 Francisco",
+				"lat": 41.961205378686,
+				"lon": -87.701003551483
+			},
+			{
+				"stpid": "11334",
+				"stpnm": "Montrose \u0026 Hamlin",
+				"lat": 41.960989973995,
+				"lon": -87.72304058075
+			},
+			{
+				"stpid": "11355",
+				"stpnm": "Montrose \u0026 Hermitage",
+				"lat": 41.961520506459,
+				"lon": -87.672518491745
+			},
+			{
+				"stpid": "11351",
+				"stpnm": "Montrose \u0026 Hoyne",
+				"lat": 41.961380893081,
+				"lon": -87.681487798691
+			},
+			{
+				"stpid": "11340",
+				"stpnm": "Montrose \u0026 Kedzie",
+				"lat": 41.961169477955,
+				"lon": -87.708384990692
+			},
+			{
+				"stpid": "11330",
+				"stpnm": "Montrose \u0026 Keeler",
+				"lat": 41.960886260366,
+				"lon": -87.732819914818
+			},
+			{
+				"stpid": "11327",
+				"stpnm": "Montrose \u0026 Kilbourn",
+				"lat": 41.960786535563,
+				"lon": -87.741166949272
+			},
+			{
+				"stpid": "11329",
+				"stpnm": "Montrose \u0026 Kildare",
+				"lat": 41.960846370464,
+				"lon": -87.73580789566
+			},
+			{
+				"stpid": "11338",
+				"stpnm": "Montrose \u0026 Kimball",
+				"lat": 41.961121610282,
+				"lon": -87.713041305542
+			},
+			{
+				"stpid": "11325",
+				"stpnm": "Montrose \u0026 Knox",
+				"lat": 41.960726700607,
+				"lon": -87.745184898376
+			},
+			{
+				"stpid": "11328",
+				"stpnm": "Montrose \u0026 Kostner",
+				"lat": 41.960806480536,
+				"lon": -87.738500833511
+			},
+			{
+				"stpid": "11323",
+				"stpnm": "Montrose \u0026 Lamon",
+				"lat": 41.960666865594,
+				"lon": -87.750082612038
+			},
+			{
+				"stpid": "11320",
+				"stpnm": "Montrose \u0026 Laramie",
+				"lat": 41.960571129457,
+				"lon": -87.757523059845
+			},
+			{
+				"stpid": "11322",
+				"stpnm": "Montrose \u0026 Lavergne",
+				"lat": 41.960622986549,
+				"lon": -87.752518057823
+			},
+			{
+				"stpid": "11335",
+				"stpnm": "Montrose \u0026 Lawndale",
+				"lat": 41.961021885847,
+				"lon": -87.72058904171
+			},
+			{
+				"stpid": "11350",
+				"stpnm": "Montrose \u0026 Lincoln",
+				"lat": 41.961344992449,
+				"lon": -87.683950066566
+			},
+			{
+				"stpid": "11317",
+				"stpnm": "Montrose \u0026 Linder",
+				"lat": 41.960519272322,
+				"lon": -87.764528989792
+			},
+			{
+				"stpid": "11319",
+				"stpnm": "Montrose \u0026 Lockwood",
+				"lat": 41.960539217379,
+				"lon": -87.75995850563
+			},
+			{
+				"stpid": "11318",
+				"stpnm": "Montrose \u0026 Long",
+				"lat": 41.960523261334,
+				"lon": -87.762431502342
+			},
+			{
+				"stpid": "11315",
+				"stpnm": "Montrose \u0026 Major",
+				"lat": 41.960423535963,
+				"lon": -87.769802212715
+			},
+			{
+				"stpid": "11363",
+				"stpnm": "Montrose \u0026 Marine Drive",
+				"lat": 41.961927377987,
+				"lon": -87.64718234539
+			},
+			{
+				"stpid": "11313",
+				"stpnm": "Montrose \u0026 Marmora",
+				"lat": 41.960355722622,
+				"lon": -87.774705290794
+			},
+			{
+				"stpid": "11311",
+				"stpnm": "Montrose \u0026 Meade",
+				"lat": 41.960295887261,
+				"lon": -87.77959227562
+			},
+			{
+				"stpid": "11310",
+				"stpnm": "Montrose \u0026 Melvina",
+				"lat": 41.960255996989,
+				"lon": -87.782033085823
+			},
+			{
+				"stpid": "11314",
+				"stpnm": "Montrose \u0026 Menard",
+				"lat": 41.960383645771,
+				"lon": -87.772280573845
+			},
+			{
+				"stpid": "11321",
+				"stpnm": "Montrose \u0026 Milwaukee",
+				"lat": 41.960611019531,
+				"lon": -87.754615545273
+			},
+			{
+				"stpid": "11309",
+				"stpnm": "Montrose \u0026 Mobile",
+				"lat": 41.960224084753,
+				"lon": -87.784473896027
+			},
+			{
+				"stpid": "17523",
+				"stpnm": "Montrose \u0026 Narragansett",
+				"lat": 41.96017621637,
+				"lon": -87.787048816681
+			},
+			{
+				"stpid": "11307",
+				"stpnm": "Montrose \u0026 Neenah",
+				"lat": 41.960048567172,
+				"lon": -87.790610790253
+			},
+			{
+				"stpid": "11349",
+				"stpnm": "Montrose \u0026 Oakley",
+				"lat": 41.961309091796,
+				"lon": -87.686369419098
+			},
+			{
+				"stpid": "11356",
+				"stpnm": "Montrose \u0026 Paulina",
+				"lat": 41.961540451202,
+				"lon": -87.670919895172
+			},
+			{
+				"stpid": "11332",
+				"stpnm": "Montrose \u0026 Pulaski",
+				"lat": 41.96093013923,
+				"lon": -87.727734446526
+			},
+			{
+				"stpid": "11346",
+				"stpnm": "Montrose \u0026 Rockwell",
+				"lat": 41.961269202158,
+				"lon": -87.693643569946
+			},
+			{
+				"stpid": "11342",
+				"stpnm": "Montrose \u0026 Sacramento",
+				"lat": 41.961193411778,
+				"lon": -87.703449726105
+			},
+			{
+				"stpid": "11339",
+				"stpnm": "Montrose \u0026 Spaulding",
+				"lat": 41.961137566177,
+				"lon": -87.71084189415
+			},
+			{
+				"stpid": "11333",
+				"stpnm": "Montrose \u0026 Springfield",
+				"lat": 41.960962051112,
+				"lon": -87.725502848625
+			},
+			{
+				"stpid": "11337",
+				"stpnm": "Montrose \u0026 St. Louis",
+				"lat": 41.961093687456,
+				"lon": -87.715696692467
+			},
+			{
+				"stpid": "17609",
+				"stpnm": "Montrose \u0026 Western",
+				"lat": 41.961301666667,
+				"lon": -87.688279999999
+			},
+			{
+				"stpid": "11353",
+				"stpnm": "Montrose \u0026 Winchester",
+				"lat": 41.961436738469,
+				"lon": -87.677561044693
+			},
+			{
+				"stpid": "11326",
+				"stpnm": "Montrose Blue Line Station",
+				"lat": 41.960702766608,
+				"lon": -87.743554115295
+			},
+			{
+				"stpid": "11354",
+				"stpnm": "Montrose Brown Line Station",
+				"lat": 41.961472639049,
+				"lon": -87.675141692162
+			},
+			{
+				"stpid": "4910",
+				"stpnm": "Wilson \u0026 Beacon",
+				"lat": 41.965289952032,
+				"lon": -87.663720846176
+			},
+			{
+				"stpid": "4914",
+				"stpnm": "Wilson \u0026 Broadway (Red Line)",
+				"lat": 41.965369726248,
+				"lon": -87.657707333565
+			},
+			{
+				"stpid": "4917",
+				"stpnm": "Wilson \u0026 Clarendon",
+				"lat": 41.96545747777,
+				"lon": -87.650036215782
+			},
+			{
+				"stpid": "4916",
+				"stpnm": "Wilson \u0026 Hazel",
+				"lat": 41.965429556844,
+				"lon": -87.652176618576
+			},
+			{
+				"stpid": "4912",
+				"stpnm": "Wilson \u0026 Magnolia",
+				"lat": 41.965325850441,
+				"lon": -87.660840153694
+			},
+			{
+				"stpid": "11362",
+				"stpnm": "Wilson \u0026 Marine Drive",
+				"lat": 41.965122425853,
+				"lon": -87.648555636406
+			},
+			{
+				"stpid": "4915",
+				"stpnm": "Wilson \u0026 Sheridan",
+				"lat": 41.965409613318,
+				"lon": -87.654536962509
+			}
+		]
+	}
+}

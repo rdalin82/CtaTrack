@@ -49,13 +49,13 @@ module CtaTrack
     def self.stops(args)
       api_request("#{@@baseurl}getstops?key=#{@@apikey}&rt=#{args[:route]}&dir=#{args[:direction]}")
     end
-  end
 
-  def self.predictions(**args)
-    if args[:routes] && args[:stopId]
-      nokorequest("#{@@baseurl}getpredictions?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}&stpid=#{args[:stopId]}")
-    else
-      raise new ArgumentError
+    def self.predictions(**args)
+      if args[:routes] && args[:stopId]
+        api_request("#{@@baseurl}getpredictions?key=#{@@apikey}&rt=#{requested_routes(args[:routes])}&stpid=#{args[:stopId]}")
+      else
+        raise new ArgumentError
+      end
     end
   end
 end
