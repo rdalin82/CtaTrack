@@ -1,3 +1,5 @@
 language: ruby
 rvm:
-  - 2.3.1
+- 2.3.1
+
+before_install: openssl aes-256-cbc -K $encrypted_244e8a2d4bdc_key -iv $encrypted_244e8a2d4bdc_iv -in config.yml.enc -out config.yml -d
